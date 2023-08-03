@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/07b6e32142.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 id="yash">YASH</h1>
+                <ul id="sidemenu">
+                    <li><a href="'#">HOME</a></li>
+                    <li><a href="'#">ABOUT</a></li>
+                    <li><a href="'#">SERVICES</a></li>
+                    <li><a href="'#">PORTFOLIO</a></li>
+                    <li><a href="'#">CONTACT US</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>FULL STACK DEVELOPER</p>
+                <h1>Hi, I'm <span>Yash</span> Mehra <br> From Punjab</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./IMG_20230802_063712.jpg"
+                        alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle" style="font-size: 80px;
+                    font-weight: 1000;
+                    background-image: url(data:image/jpeg;base64,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);
+                    background-size: cover;
+                    background-position: center;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    margin-top: 20px;">About Me</h1>
+                    <p>At the highest level, a true full-stack developer is someone who can build and deploy the
+                        entirety of an application. This person should be able to work on the front-end, backend,
+                        databases, systems, cloud and also be able to test their work.The value of a Full Stack
+                        Developer in any kind of IT company is much important and in now a days this is very
+                        demanded.For this reason I always working on to sharped my skills and Really, I enjoy my
+                        job.This is also preferable for a Developer that time to time they can learn something new to
+                        sharp their skills.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"><b>Skills</b></p>
+                        <p class="tab-links" onclick="opentab('experience')"><b>Experience</b></p>
+                        <p class="tab-links" onclick="opentab('education')"><b>Education</b></p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><B>
+                                        <h3>Full Stack Developer</h3>
+                                    </B></span><br>Designing Web/App interfaces</li><br>
+                            <li><span><B>
+                                        <h3>Web Development</h3>
+                                    </B></span><br>developing Modern Websites</li><br>
+                            <li><span><B>
+                                        <h3>App Development</h3>
+                                    </B></span><br>Building Android/iOS apps </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <h4>FRESHER FOR NOW</h4>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span><B>
+                                        <h3>Backend Development</h3>
+                                    </B></span><br>C,C++,JAVA</li><br>
+                            <li><span><B>
+                                        <h3>Frontend Development</h3>
+                                    </B></span><br>HTML,CSS,Java Script</li><br>
+                            <li><span><B>
+                                        <h3>Other</h3>
+                                    </B></span><br>Database,Data structure</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <div class="sub-title">
+                <h1>My Services</h1>
+            </div>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design is the art of planning and arranging content on a website so that it can be shared and
+                        accessed online with the world. A combination of aesthetic and functional elements, web design
+                        is a type of digital design that determines the look of a website—such as its colors, fonts,
+                        graphics and user interface.
+
+
+                        Today, creating a website is one of the pillars of having an online presence. Because of this,
+                        the world of web design is as dynamic as ever. It is constantly evolving, including mobile apps
+                        and user interface design, to meet the growing needs of website owners and visitors alike.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>In today’s digital era, the importance of app design in application development cannot be
+                        overstated. With millions of apps available on various platforms, users have a plethora of
+                        options to choose from, making it essential for developers to create engaging, user-friendly,
+                        and accessible applications. This blog will explore the critical role that app design plays in
+                        the development process, focusing on aspects such as User Experience (UX), User Interface (UI),
+                        accessibility, branding, and consistency. By examining app design principles and best practices,
+                        we will gain a deeper understanding of how a well-designed app can enhance user satisfaction,
+                        ultimately contributing to the success of an application.
+
+                        From the outset, app designers and developers need to collaborate closely to ensure a seamless
+                        marriage of form and function. This collaboration is essential to create an application that not
+                        only meets users’ needs but also provides an enjoyable and intuitive experience. In the upcoming
+                        sections, we will delve into the importance of app design principles like clarity, feedback,
+                        flexibility, and consistency in crafting an app that stands out in today’s competitive market.
+                        Furthermore, we will discuss the app design process, including research, wireframing,
+                        prototyping, testing, and iteration, as well as how incorporating user feedback and
+                        design-driven development can lead to a more refined and successful product.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI4GU9Mf7-3EvgtVDbTM2U4nzmwh6B-PLrgA&usqp=CAU"
+                        alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app is used to find the new movies of the netflix.
+                            Download it from Play Store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="">
+                    <div class="layer">
+                        <h3>video Editor App</h3>
+                        <p>The app is used to edit the videos of your device.
+                            Download it from Play Store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+    </div>
+    <div class="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p id="et"><i class="fa-solid fa-envelope-circle-check fa-flip" style="color: goldenrod;"></i></i>mehrayash567@gmail.com</p>
+                    <p id="pt"><i class="fa-solid fa-phone fa-shake" style="color: darkblue;"></i></i>7087156360</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagaram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/"><i class="fa-brands fa-github" ></i></a>
+                    </div>
+                    <a href="./MY CV 1.rtf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">
+                            <h4>Submit</h4>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
