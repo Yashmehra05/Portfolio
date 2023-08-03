@@ -383,7 +383,7 @@ nav .fa-solid
 }
 
 
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     #header {
         background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1blkdhp9EBWSy_6SuB4ME5qcgGE7dalaLXA&usqp=CAU);
     }
@@ -476,4 +476,4 @@ nav ul .fa-solid {
 .contact-left,
 .contact-right {
     flex-basis: 100%;
-} */
+}
